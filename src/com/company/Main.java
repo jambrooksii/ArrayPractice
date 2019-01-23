@@ -13,8 +13,16 @@ public class Main {
         for (int i = 0; i < tempature.length ; i++) {
             double numUserInput = sc.nextDouble();
             tempature[i] = numUserInput;
+            System.out.println("Please Enter Next Num ");
+
         }
-        System.out.println("The Tempaturetempature[2]);
+        double total = 0;
+        for(int temp = 0; temp < tempature.length; temp++){
+            total = total + tempature[temp];
+            System.out.println(tempature[temp]);
+        }
+        double avarge = total/tempature.length;
+        System.out.println("The Average temperature for the week is " + avarge);
 	// write your code here
     }
 }
